@@ -1,0 +1,15 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/shell",
+    "crates/state-engine",
+]
+
+[workspace.package]
+edition = "2021"
+license = "GPL-3.0-only"
+version = "0.1.0"
+
+[workspace.dependencies]
+gtk4 = { version = "0.9", features = ["v4_12"] }
+gtk4-layer-shell = "0.5"

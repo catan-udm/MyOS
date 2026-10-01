@@ -1,0 +1,11 @@
+[Unit]
+Description=MyOS state engine
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=%h/myOS/MyOS/target/debug/myos-state-engine
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target
